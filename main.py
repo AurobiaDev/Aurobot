@@ -1,6 +1,10 @@
 import discord
 
+import modules.cLogger as cLog
+
 from dotenv import dotenv_values
+
+cLog.new_log()
 
 TOKEN = dotenv_values(".env")["TOKEN"]
 
